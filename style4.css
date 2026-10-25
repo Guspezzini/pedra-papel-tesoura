@@ -1,0 +1,139 @@
+/* 1. Reset básico e centralização */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: white; /* Mantido o fundo claro padrão */
+    color: #2d3748;            /* Texto escuro suave (Grafite) */
+    line-height: 1.6;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 2. Cabeçalho e Títulos */
+h1 {
+    color: #2b6cb0; /* Azul suave e elegante idêntico às outras páginas */
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #4a5568; /* Tom neutro escuro para os subtítulos */
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #e2e8f0; /* Linha divisória cinza clara */
+    padding-bottom: 5px;
+}
+
+p {
+    color: #718096; /* Cinza médio para leitura confortável */
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/* 3. Link do Menu (Estilo Botão) */
+a {
+    display: inline-block;
+    background: #ffffff; /* Botão voltar branco */
+    color: #2d3748;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #cbd5e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s;
+    margin-bottom: 15px;
+}
+
+a:hover {
+    background: #2b6cb0; /* Fica azul ao passar o mouse */
+    color: #ffffff;      /* Texto muda para branco */
+    border-color: #2b6cb0;
+}
+
+/* 4. Listas de Opções */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    background: #ffffff; /* Itens da lista em cartões brancos */
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border-left: 4px solid #2b6cb0; /* Detalhe lateral em azul */
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+li strong {
+    color: #2d3748; /* Texto em destaque escuro */
+}
+
+/* 5. Tabela de Confrontos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #ffffff; /* Tabela com fundo branco */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); /* Sombra sutil na tabela */
+    border: 1px solid #e2e8f0;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f7fafc; /* Cabeçalho da tabela em cinza bem claro */
+    color: #4a5568;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+td {
+    border-bottom: 1px solid #edf2f7; /* Linhas divisórias internas muito suaves */
+    color: #4a5568;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Destaca o nome do elemento na tabela */
+td strong {
+    color: #2b6cb0; /* Destaques internos mudam para azul */
+}
+
+/* 6. Seção de Resumo */
+p:has(text-align), 
+p {
+    margin-bottom: 10px;
+}
+
+/* Seletor focado nos seus resumos matemáticos (🪨 > ✂️) */
+body > p {
+    font-size: 16px;
+    color: #2d3748;
+    font-weight: 500;
+}

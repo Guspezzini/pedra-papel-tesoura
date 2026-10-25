@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./nod"defer></script>
+    <link rel="stylesheet" href="./style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <h1>PEDRA, PAPEL E TESOURA</h1>
+        <p>boot vs player 1</p>
+
+        <a href="./regras.html">não sei como jogar</a>
+
+        <div class="jogo-area">
+            <p>resposta do boot VS você</p>
+            <small>só ira aparecer quando clicar em "GERAR RESULTADO"</small>
+            
+        
+            <div id="boot_resposta"></div>
+            
+          
+            <div id="resultado"></div>
+        </div>
+
+        <div class="controles">
+            <label for="input_player">Sua escolha:</label>
+            <label for="input_player">1 = ✊ pedra</label>
+            <label for="input_player">2 = ✋ papel</label>
+            <label for="input_player">3 = ✌️ tesoura</label>
+            <input type="text" id="input_player" placeholder="Ex: 1">
+            <button onclick="principal()">GERAR RESULTADO</button>
+        </div>
+    </main>
+
+
+
+
+
+    <br><br>
+    <a href="./material.html">usar emoji de materiais: 🪨📄✂️ </a>
+    <br>
+    <a href="./index.html">MENU</a>

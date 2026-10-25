@@ -1,0 +1,120 @@
+/* 1. Reset básico e centralização na tela */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc; /* Fundo levemente acinzentado para dar contraste */
+    color: #1e293b;          /* Texto escuro premium */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 2. Cabeçalho */
+h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #2b6cb0; /* Azul elegante */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #64748b; /* Cinza médio elegante */
+    font-size: 16px;
+    margin-bottom: 35px;
+    font-weight: 500;
+}
+
+/* 3. Estilização dos Links / Botões */
+
+/* LINK DE REGRAS (Fica pequeno e discreto no topo ou meio) */
+a[href*="regras"] {
+    color: #64748b !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    margin-bottom: 30px !important;
+    padding: 8px 16px !important;
+    border-radius: 20px !important;
+    background: transparent !important;
+    transition: all 0.2s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    border: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    width: auto !important;
+    max-width: none !important;
+}
+
+a[href*="regras"]::before {
+    content: "💡";
+    font-size: 14px;
+}
+
+a[href*="regras"]:hover {
+    color: #2b6cb0 !important;
+    background: #ebf8ff !important;
+}
+
+/* TODOS OS OUTROS LINKS (AGORA VAI ARRUMAR TODOS OS BOTÕES DE PÁGINAS) */
+a:not([href*="regras"]) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: #ffffff; 
+    color: #334155;      
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 18px 24px;
+    border-radius: 12px; /* Cantos arredondados modernos */
+    border: 1px solid #e2e8f0; 
+    width: 100%;
+    max-width: 340px;
+    margin: 14px auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); /* Transição suave profissional */
+    cursor: pointer;
+}
+
+/* Adicionando as setinhas discretas para os botões */
+a:not([href*="regras"])::after {
+    content: "→";
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.25s ease;
+}
+
+/* Efeito ao passar o mouse nos botões */
+a:not([href*="regras"]):hover {
+    background: #ffffff;
+    color: #2b6cb0;
+    border-color: #2b6cb0; 
+    transform: translateY(-4px); /* Sobe suavemente */
+    box-shadow: 0 12px 20px -5px rgba(43, 108, 176, 0.15); /* Sombra brilha no azul do tema */
+}
+
+/* Faz a setinha aparecer e deslizar para o lado no hover */
+a:not([href*="regras"]):hover::after {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Efeito de clique */
+a:not([href*="regras"]):active {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 10px -4px rgba(43, 108, 176, 0.15);
+}

@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: #2c3e50; /* Texto escuro suave */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 2. Container principal do jogo */
+.container {
+    background: #ffffff; /* Fundo limpo e claro */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06); /* Sombra leve e elegante */
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 20px;
+}
+
+/* Títulos e textos */
+h1 {
+    color: #27ae60; /* Verde oliva/pastel sofisticado (substitui o neon) */
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #7f8c8d; /* Cinza médio de boa leitura */
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+small {
+    color: #95a5a6; /* Cinza claro para detalhes */
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Links em geral */
+a {
+    color: #2980b9; /* Link em azul sóbrio */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #27ae60; /* Muda para o verde do tema */
+    text-decoration: underline;
+}
+
+/* 3. Área central onde o Boot responde */
+.jogo-area {
+    margin: 25px 0;
+    background: #f8f9fa; /* Fundo sutil para destacar a área de resposta */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px dashed #bdc3c7;
+}
+
+/* Onde aparece o emoji do Boot */
+#boot_resposta {
+    font-size: 55px;
+    margin: 10px 0;
+    min-height: 65px;
+}
+
+/* Onde aparece se ganhou ou perdeu */
+#resultado {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #d35400; /* Laranja queimado para boa leitura no fundo claro */
+    margin-top: 10px;
+}
+
+/* 4. Controles (Input e Botão) */
+.controles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.controles label {
+    font-size: 14px;
+    color: #34495e;
+}
+
+input[type="text"] {
+    background: #ffffff;
+    border: 2px solid #bdc3c7;
+    color: #2c3e50;
+    padding: 10px;
+    border-radius: 6px;
+    width: 80px;
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #27ae60; /* Foco do input usando o verde do tema */
+}
+
+button {
+    background: #27ae60; /* Botão verde suave */
+    color: #ffffff;      /* Texto branco */
+    border: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(39, 174, 96, 0.15);
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background: #219653; /* Verde ligeiramente mais escuro no hover */
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+ select {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+ }
+select{
+
+    font-size: 2rem;
+}

@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: #2d3748; /* Texto escuro suave */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 2. Container principal do jogo */
+.container {
+    background: #ffffff; /* Cartão branco limpo */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #e2e8f0; /* Borda cinza bem clara */
+    margin-bottom: 20px;
+}
+
+/* Títulos e textos */
+h1 {
+    color: #27ae60; /* Azul suave idêntico à primeira página */
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #718096; /* Cinza médio para boa leitura */
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+small {
+    color: #a0aec0; /* Cinza claro para textos secundários */
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Links em geral */
+a {
+    color: #2980b9; /* Tom neutro escuro */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #27ae60; /* Destaca com o azul do tema */
+    text-decoration: underline;
+}
+
+/* 3. Área central onde o Bot responde */
+.jogo-area {
+    margin: 25px 0;
+    background: #f7fafc; /* Fundo cinza bem claro para destacar do container */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px dashed #cbd5e0; /* Pontilhado sutil */
+}
+
+/* Onde aparece o emoji do Boot */
+#boot_resposta {
+    font-size: 55px;
+    margin: 10px 0;
+    min-height: 65px;
+}
+
+/* Onde aparece se ganhou ou perdeu */
+#resultado {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #dd6b20; /* Laranja um pouco mais escuro para contrastar no fundo claro */
+    margin-top: 10px;
+}
+
+/* 4. Controles (Input e Botão) */
+.controles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.controles label {
+    font-size: 14px;
+    color: #4a5568; /* Texto de suporte escuro */
+}
+
+input[type="text"] {
+    background: #ffffff; /* Fundo do input branco */
+    border: 2px solid #cbd5e0; /* Borda sutil */
+    color: #2d3748; /* Texto escuro ao digitar */
+    padding: 10px;
+    border-radius: 6px;
+    width: 80px;
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #27ae60; /* Borda do input azul ao focar */
+}
+
+button {
+    background: #27ae60; /* Botão principal azul */
+    color: #ffffff;      /* Texto do botão branco */
+    border: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(43, 108, 176, 0.2); /* Sombra azul leve */
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background: #2b5c8f; /* Tom de azul um pouco mais escuro no hover */
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+select{
+
+font-size: 2rem;
+
+}
